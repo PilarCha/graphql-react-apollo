@@ -1,6 +1,6 @@
-import { useQuery, gql } from "@apollo/client";
 import React from "react";
 import Link from "./Link";
+import { useQuery, gql } from "@apollo/client";
 
 const FEED_QUERY = gql`
   {
@@ -8,7 +8,7 @@ const FEED_QUERY = gql`
       id
       links {
         id
-        createAt
+        createdAt
         url
         description
       }
@@ -19,7 +19,7 @@ const FEED_QUERY = gql`
 const LinkList = () => {
   const { loading, error, data } = useQuery(FEED_QUERY);
 
-  if (loading) return "Loadinggg....";
+  if (loading) return "Loadingggg.....";
   if (error) return `Error ${error.message}`;
 
   return (
