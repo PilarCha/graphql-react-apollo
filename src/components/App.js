@@ -1,9 +1,8 @@
-import React, { Component } from "react";
-import LinkList from "./LinkList";
-class App extends Component {
-  render() {
-    return <LinkList />;
-  }
-}
+import React from "react";
+import CreateLink from "./CreateLink";
+
+const App = () => {
+  return <CreateLink />;
+};
 
 export default App;

@@ -30,6 +30,7 @@ const CreateLink = () => {
       <form
         onSubmit={(e) => {
           e.preventDefault();
+          createLink();
         }}
       >
         <div className="flex flex-column mt3">
